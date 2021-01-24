@@ -1,27 +1,27 @@
 exports.getDate=function (){
-  var today = new Date();
-  var currentDay = today.getDay()
+  const today = new Date();
+  const currentDay = today.getDay()
 
-  var options={
+  const options={
     weekday:"long",
     day:"numeric",
     month: "long"
   }
 
-  var day=today.toLocaleDateString("en-US", options);
+  const day=today.toLocaleDateString("en-US", options);
 
   return day;
 }
 
 exports.getDay=function(){
-  var today = new Date();
-  var currentDay = today.getDay()
+  const today = new Date();
+  const currentDay = today.getDay()
 
-  var options={
+  const options={
     weekday:"long"
   }
 
-  var day=today.toLocaleDateString("en-US", options);
+  const day=today.toLocaleDateString("en-US", options);
 
   return day;
 }
