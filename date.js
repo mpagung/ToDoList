@@ -1,4 +1,4 @@
-module.exports.getDate=function (){
+exports.getDate=function (){
   var today = new Date();
   var currentDay = today.getDay()
 
@@ -13,7 +13,7 @@ module.exports.getDate=function (){
   return day;
 }
 
-module.exports.getDay=function(){
+exports.getDay=function(){
   var today = new Date();
   var currentDay = today.getDay()
 
