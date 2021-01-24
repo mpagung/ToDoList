@@ -22,7 +22,7 @@ app.get("/", function(req, res) {
 app.post("/", function(req,res){
   console.log(req.body)
 
-  var item = req.body.newItem;
+  const item = req.body.newItem;
   // console.log(req.body) //checking what the value is returned when the button is pressed
   if (req.body.list === "Work"){
     workItems.push(item);
